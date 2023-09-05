@@ -1,0 +1,182 @@
+.portfolio {
+    padding: 40px;
+    background-color: var(--purple1);
+
+    &-fluid {
+
+        background-image: url(../images/maps.jpg);
+    }
+    &-container {
+        display: flex;
+        align-items: center;
+        max-width: 764px;
+        margin: 0 auto;
+        padding: 170px 0 140px;
+    }
+
+    &-img {
+        margin: 0 auto;
+    }
+
+    &-icon {
+        display: flex;
+        align-items: center;
+    }
+
+    &-content {
+        background-color: var(--purple);
+        padding: 40px 0px 110px 33px;
+    }
+
+    &-title {
+        font-family: "RobotoRegular", sans-serif;
+        font-size: 35px;
+        color: var(--white);
+        line-height: 1.5;
+        letter-spacing: 4px;
+    }
+
+    &-desc {
+        color: var(--white);
+        max-width: 315px;
+        line-height: 1.5;
+        margin-bottom: 45px;
+        font-family: "RobotoRegular", sans-serif;
+    }
+
+    &-number {
+        color: var(--white);
+        font-size: 25px;
+        margin-bottom: 45px;
+    }
+
+    &-icon {
+        display: flex;
+        gap: 0 20px;
+        margin-bottom: 50px;
+    }
+
+    &-visit {
+        color: var(--white);
+        font-size: 25px;
+        font-family: "RobotoRegular", sans-serif;
+
+    }
+
+    &-main {
+        background: var(--black);
+        max-width: 555px;
+        padding: 44px 0 56px 39px;
+    }
+
+    &-list {
+        width: 400px;
+        font-size: 38px;
+        font-family: "RobotoRegular", sans-serif;
+        color: var(--white);
+        margin-bottom: 48px;
+    }
+
+    &-form-input {
+        margin-bottom: 20px;
+    }
+
+    &-inputs {
+        font-family: "RobotoRegular", sans-serif;
+        background: var(--black1);
+        border: none;
+        padding: 10px 137px 10px 10px;
+        color: var(--white);
+        z-index: 1;
+
+    }
+
+    &-input-bottom {
+        border: none;
+        margin-bottom: 140px;
+    }
+
+    &-item {
+        font-family: "RobotoRegular", sans-serif;
+        margin-bottom: 40px;
+        font-size: 25px;
+    }
+
+    &-form-inputt {
+        padding: 12px 153px 83px 11px;
+        background: var(--black1);
+        color: var(--white);
+        border: none;
+        margin-bottom: 30px;
+    }
+    &-top {
+        display: flex;
+    }
+
+    @media screen and (max-width: 767.98px) {
+        &-container {
+            flex-direction: column;
+            width: 420px;
+            margin-left: -10px;
+            padding: 50px 0 10px;
+
+              
+        }
+
+        &-inputs {
+            padding: 10px 50px 10px 10px;
+        }
+
+        &-form-inputt {
+            padding: 12px 78px 50px 11px;
+        }
+        &-top {
+            padding: 12px 78px 50px 11px;
+        } 
+        &-content{
+        margin-bottom: 30px;
+        } 
+        
+    }
+@media screen and (max-width: 1023.98px) {
+   
+    &-container {
+        padding: 50px 0 50px;
+    }
+    &-top {
+        width: 100%;
+    }
+    &-main {
+        max-width: 741px;
+        background: var(--black);
+        padding: 44px 0 56px 39px;
+    }
+    &-form-inputt {
+        padding: 15px 482px 83px 11px;
+    }
+    &-inputs {
+        background: var(--black1);
+        border: none;
+        padding: 15px 451px 15px 15px;
+        color: var(--white);
+        z-index: 1;
+    }
+    &-desc {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    &-title {
+        margin-bottom: 10px;
+    }
+    &-number {
+        margin-bottom: 30px;
+    }
+    &-icon {
+        margin-bottom: 35px;
+    }
+    &-content {
+        padding: 60px 0px 60px 40px;
+    }
+  
+}
+}

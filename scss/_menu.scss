@@ -1,0 +1,108 @@
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 0 0px;
+    &-mobile{
+        display: none;
+        &-menu {
+            display: none;
+            margin-top: 45px;
+            width: 100%;
+            li {
+                list-style: none;
+                text-align: center;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    display: inline-block;
+                    padding: 8px;
+                }
+            }
+        }
+    }
+    &-item{
+        
+        list-style: none;
+    }
+    &-item-active {
+        font-family: "RobotoRegular", sans-serif;
+        a{
+            background:var(--purple-color);
+            color: var(--white);
+            &::after {
+                width: 44%;
+                left: 6%;
+                margin: 0px auto;
+            }
+        }
+    }
+    &-item:hover{
+        background: #9277B5;;
+        a{
+            color: var(--white);
+            &::after {
+                width: 44%;
+                left: 6%;
+                margin: 0px auto;
+            }
+        }
+    }
+    &-link {
+        display: inline-block;
+        font-size: 18px;
+        text-decoration: none;
+        font-family: "BuiltTitlingRegular", sans-serif;
+        letter-spacing: 2.7px;
+        color: var(--white);
+        position: relative;
+        transition: all 0.2s linear;
+        padding:62px 120px 55px 130px;
+        &::after {
+            position: absolute;
+            content: "";
+            top: 90px;
+            left: auto;
+            right: 22px;
+            width: 0;
+            height: 4px;
+            background-color: var(--white);
+            transition: all 0.2s linear;
+        }
+    }
+    &-icon {
+        color: #E5E0F0;
+        border-bottom: 4px solid white;
+        padding-bottom: 13px;
+    }
+    @media screen and (max-width: 991px) {
+        gap: 0 0px;
+        &-item{
+         padding: 40px 20px;
+         list-style: none;
+         }
+    }
+    @media screen and (max-width: 767.98px) {
+        display: none;
+        &-mobile{
+            order: 1;
+            display: block;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 500;
+            position: absolute;
+            right: 4%;
+            z-index: 100;
+            &-menu {
+                // display: block;
+            }
+        }
+        &-logo {
+            margin-top: 8px;
+            justify-content: space-evenly;
+            right: unset;
+        }
+        &-icon {
+            border: none;
+        }
+    }
+}

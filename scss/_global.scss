@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+@font-face {
+    font-family: "BuiltTitlingRegular";
+    src: url("../fonts/built titling rg.otf") format("truetype");
+  }
+  @font-face {
+    font-family: "RobotoRegular";
+    src: url("../fonts/RobotoCondensed-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "RobotoBold";
+    src: url("../fonts/RobotoCondensed-Bold.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "BuiltTitlingBoldItalic";
+    src: url("../fonts/BuiltTitlingRg-BoldItalic.ttf") format("truetype");
+  }
+.wrapper {
+    // width: 1586px;
+    margin: 0 auto;
+}
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.heading {
+    font-size: 45px;
+    font-family: "BuiltTitlingRegular", sans-serif;
+    width: 630px;
+    letter-spacing: 3px;
+    color: var(--white);
+    margin-bottom: 40px;
+}
+
+.desc {
+    color: var(--white);
+    font-family: "RobotoRegular", sans-serif;
+    line-height: 1.7;
+    font-weight: 400;
+    width: 434px;
+    margin-left: -2.1px;
+}
+
+
+.descs {
+    color: var(--black);
+    font-family: "BuiltTitlingRegular", sans-serif;
+    margin-bottom: 45px;
+    margin-left: 1px;
+    letter-spacing: 1.5px;
+    margin-top: 1px;
+}
+
+.btn-blue {
+    color: var(--white);
+    text-decoration: none;
+    font-family: "BuiltTitlingRegular", sans-serif;
+    padding: 60px 100px 60px 100px;
+    background: var(--blue-color);
+    margin-bottom: 5px;
+}
+
+i.fa-solid.fa-house {
+    color: var(--white);
+        margin-left: 89%;
+        transform: translateY(386px);
+}
+
+.icon {
+    margin-left: 189px;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 55px;
+    color: var(--white);
+    font-weight: 500;
+    letter-spacing: 7px;
+}
+// .desgn {
+//     font-family: "BuiltTitlingRegular", sans-serif;
+//     color: var(--white);
+//     margin-top: 100px;
+//     letter-spacing: 1px;
+// }
+
+.desgn {
+    font-family: "BuiltTitlingRegular", sans-serif;
+    color: var(--white);
+    margin-top: 111px;
+    margin-left: 11px;
+    letter-spacing: 1.2px;
+}
+i.fa-brands.fa-facebook.icon {
+    transform: translateY(-16px);
+    color: var(--white);
+}
+i.fa-solid.fa-binoculars {
+    color: var(--primary-color);
+}
+i.fa-solid.fa-power-off {
+    color: var(--primary-color);
+}
+i.fa-solid.fa-bug {
+    color: var(--primary-color);
+}
+i.fa-solid.fa-user{
+    color: var(--primary-color);
+}
+i.fa.fa-calendar {
+    font-size: 105px;
+}
+.img {
+    height: 227px;
+    width: 217px;
+    margin-top: -14px;
+    margin-left: -10px;
+    background-position: center;
+}
+.titles {
+    font-family: "BuiltTitlingRegular", sans-serif;
+    font-size: 35px;
+    margin-left: 1px;
+    margin-top: -64px;
+    margin-bottom: 75px;
+    letter-spacing: 3.5px;
+    font-style: italic;
+    font-weight: bold;
+}
+.btn-button{
+    padding: 10px 30px 10px 30px;
+    font-family: "BuiltTitlingRegular", sans-serif;
+    background: var(--black);
+    text-decoration: none;
+   color: var(--white);
+}
+.inputs{
+  margin-bottom: 10px;
+}
+.btn-buttons {
+    padding: 15px 50px 15px 50px;
+    background: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+}
+textarea {
+    resize: none;
+}
+@media screen and (max-width: 767.98px) {
+    .titles {
+        margin-bottom: 40px;
+        font-size: 25px;
+    }
+   .heading {
+    font-size: 40px;
+    margin-bottom: 30px;
+   }
+   .desc {
+    margin-bottom: 80px;
+   }
+   .btn-blue {
+       padding: 40px 115px 40px 115px
+
+   }
+}
+@media screen and (max-width: 1023.98px) {
+    .titles {
+        margin-bottom: 50px;
+    }
+    .btn-blue {
+        color: var(--white);
+        text-decoration: none;
+        padding: 40px 100px 40px 100px;
+        background: var(--blue-color);
+        margin-bottom: 5px;
+    }
+   }

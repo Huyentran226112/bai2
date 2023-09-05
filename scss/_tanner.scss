@@ -1,0 +1,43 @@
+.tanner {
+    background: purple;
+}
+button.slick-arrow {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background: var(--primary-color);
+    top: 57%;
+    border-radius: 50%;
+}
+.slick-track {
+    position: relative;
+    top: -1px;
+    left: 3px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+button.slick-next.slick-arrow {
+    right: 72px;
+}
+button.slick-prev.slick-arrow {
+    left: 94px;
+    z-index: 1;
+}
+button.slick-arrow i {
+    width: 35px;
+    height: 34px;
+    border-radius: 65%;
+    background: #e1dbdb;
+    padding-top: 9px;
+    z-index: 2;
+    color: var(--primary-color);
+}
+@media screen and (max-width: 767.98px) {
+    button.slick-prev.slick-arrow {
+        left: 30px;
+    }
+    button.slick-next.slick-arrow {
+        right: 30px;
+    }
+}

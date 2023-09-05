@@ -1,0 +1,111 @@
+@font-face {
+font-family: "BuiltTitlingRegular";
+src: url("../fonts/BuiltTitlingRg-Regular400.ttf") format("truetype");
+}
+@font-face {
+font-family: "RobotoRegular";
+src: url("../fonts/Roboto/RobotoCondensed-Regular.ttf") format("truetype");
+}
+@font-face {
+font-family: "RobotoBold";
+src: url("../font/Roboto/RobotoCondensed-Bold.ttf") format("truetype");
+}
+.service {
+    padding: 80px;
+    position: relative;
+    ::after {
+        content: "";
+        background: var(--primary-color);
+        position: absolute;
+        width: 70%;
+        height: 100%;
+        top: 0;
+        z-index: -1;
+        left: 0;
+    }
+
+    &-main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+         width: 1181px;
+        margin: 0 auto;
+      
+    }
+    &-about {
+        font-size: 55px;
+        font-weight: 400;
+        font-family: "RobotoRegular", sans-serif;
+        color: var(--white);
+        letter-spacing: 8px;
+        max-width: 400px;
+        margin-bottom: 40px;
+        line-height: 1.1;
+    }
+
+    &-logo {
+        img {
+            margin-left: -100px;
+        }
+    }
+
+    &-input {
+        font-family: "RobotoRegular", sans-serif;
+        padding: 10px 20px 10px 20px;
+        background: var(--white);
+        border: none;
+    }
+
+    &-form-input {
+        margin-bottom: 10px;
+    }
+
+    @media screen and (max-width: 767.98px) {
+        padding: 40px;
+
+        ::after {
+            width: 100%;
+        }
+
+        &-about {
+            font-size: 44px;
+        }
+
+        &-main {
+            flex-direction: column;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 0 auto;
+                flex-direction: column;
+        }
+        &-logo img {
+            margin-left: 0px;
+        }
+
+        &-content {
+            margin-bottom: 50px;
+        }
+
+        &-form-input {
+            margin-bottom: 20px;
+        }
+        &-input {
+            padding: 10px 90px 10px 20px;
+        }
+     
+    }
+    @media screen and (max-width: 1023.98px) {
+        ::after {
+            width: 100%;
+        }
+        &-logo {
+            img {
+                margin-left: 0px;
+            }
+        }
+        
+    }
+    
+
+}

@@ -1,0 +1,104 @@
+.buiding {
+  padding: 184px 5px 228px 18px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    &-img {
+        position: absolute;
+        left: 51%;
+        top: 19.6%;
+    }
+  &-content {
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+  }
+  &-title {
+    font-family: "BuiltTitlingRegular", sans-serif;
+    font-size: 3.3675rem;
+    font-weight: 400;
+    letter-spacing: 5.4px;
+    margin: 0;
+    color: #EA572A;
+    width: 40%;
+    padding-top: 5px;
+   }
+   &-description {
+     font-family: "RobotoRegular";
+     line-height: 1.75;
+     width: 39%;
+     margin-bottom: 0;
+     margin-top: 11px;
+     padding-left: 1px;
+     color: #414042;
+     font-weight: 400;
+   }
+   &-list {
+     padding: 0;
+     color: #414042;
+     margin-top: 7px;
+   }
+   &-list li {
+     display: flex;
+     align-items: baseline;
+     gap: 36px;
+     position: relative;
+     margin-top: -2px;
+   }
+   &-item {
+    margin-top: 3px;
+    margin-left: 66px;
+    font-family: "BuiltTitlingRegular", sans-serif;
+    letter-spacing: 0.1px;
+     }
+     &-item h3 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 3.2px;
+      font-weight: 400;
+      // margin-top: 5px;
+     }
+     &-item p {
+        margin-bottom: 6px;
+        margin-left: 4px;
+        margin-top: 6.3px;
+        font-family: "RobotoRegular";
+        font-weight: 700;
+        font-size: 1rem;
+    }
+     &-icon {
+        color: #EA572A;
+        font-size: 2rem;
+        position: absolute;
+        left: 3px;
+        top: 6px;
+      }
+      @media screen and (max-width: 767.98px) {
+       
+        padding: 100px 30px;
+        flex-direction: column;
+      
+       &-list h3 {
+          font-size: 1.5rem;
+        }
+        &-title {
+           width: 100%;
+           font-size: 2.5rem;
+           padding-left: 0;
+           text-align: center;
+           letter-spacing: 2px;
+         }
+         &-description {
+           width: 100%;
+           margin-top: 0px;
+         }
+         &-img {
+            position: static;
+            padding-top: 65px;
+          }
+          &-item h3 {
+             letter-spacing: 1px;
+           
+           }
+  }
+  }
